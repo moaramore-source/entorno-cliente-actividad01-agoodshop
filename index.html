@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agoodshop | Carrito de la compra</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/Carrito.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>agoodshop</h1>
+    </header>
+
+    <main>
+        <h2>Carrito de la compra</h2>
+        <p id="estado" role="status">Cargando productos...</p>
+
+        <div class="carrito">
+            <section aria-labelledby="titulo-productos">
+                <h3 id="titulo-productos">Productos</h3>
+                <div id="productos"></div>
+            </section>
+
+            <aside aria-labelledby="titulo-resumen">
+                <h3 id="titulo-resumen">Resumen de la compra</h3>
+                <ul id="resumen"></ul>
+                <p class="total">
+                    Total: <span id="total" aria-live="polite">0,00 €</span>
+                </p>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

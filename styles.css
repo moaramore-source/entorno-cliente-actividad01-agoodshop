@@ -1,0 +1,95 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+main {
+    margin-top: 32px;
+}
+
+.carrito {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 90px 110px;
+    gap: 16px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.producto h4 {
+    margin: 0 0 8px;
+}
+
+.producto p {
+    margin: 0;
+}
+
+.cantidad label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cantidad input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    font: inherit;
+}
+
+.subtotal {
+    text-align: right;
+    font-weight: bold;
+}
+
+aside {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#resumen {
+    padding-left: 20px;
+}
+
+#resumen li {
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.total {
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .carrito {
+        grid-template-columns: 1fr;
+    }
+
+    .producto {
+        grid-template-columns: minmax(0, 1fr) 80px;
+    }
+
+    .subtotal {
+        grid-column: 1 / -1;
+    }
+}
